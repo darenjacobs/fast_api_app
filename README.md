@@ -71,5 +71,5 @@ The Docker image has been built and uploaded to Docker Hub for your convenience.
 
 ## Cleanup
 ```
-destroy.sh
+./destroy.sh
 ```
