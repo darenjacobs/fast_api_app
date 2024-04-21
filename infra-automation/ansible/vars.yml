@@ -1,0 +1,3 @@
+# vars.yml
+docker_username: "darenjacobs"
+docker_image_name: "fastapi-app:latest"

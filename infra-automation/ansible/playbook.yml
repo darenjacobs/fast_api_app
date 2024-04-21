@@ -1,0 +1,23 @@
+- hosts: all
+  become: yes
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Pull the Docker image
+      docker_image:
+        name: "{{ docker_username }}/{{ docker_image_name }}"
+        source: pull
+
+    - name: Run the Docker container
+      docker_container:
+        name: myapp
+        image: "{{ docker_username }}/{{ docker_image_name }}"
+        state: started
+        published_ports:
+          - "80:80"
