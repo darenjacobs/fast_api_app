@@ -14,6 +14,8 @@
 │ ├── variables.tf # Terraform variable definitions
 │ └── outputs.tf # Terraform output configurations
 ├── ansible
+│ ├── ansible.cfg # Ansible configuration file
+│ ├── vars.yml # Ansible variables file
 │ └── playbook.yml # Ansible playbook for server configuration
 └── README.md # Deployment instructions
 ```
