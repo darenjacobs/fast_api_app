@@ -2,19 +2,20 @@
 
 ## Directory Structure
 /fastapi-app
-  |-- app
-  |   |-- main.py          # FastAPI application code
-  |-- Dockerfile           # Docker configuration file
-  |-- requirements.txt     # Python dependencies
+├── app
+│   └── main.py          # FastAPI application code
+├── Dockerfile           # Docker configuration file
+└── requirements.txt     # Python dependencies
 
 /infra-automation
-  |-- terraform
-  |   |-- main.tf          # Terraform configuration for AWS resources
-  |   |-- variables.tf     # Terraform variable definitions
-  |   |-- outputs.tf       # Terraform output configurations
-  |-- ansible
-  |   |-- playbook.yml     # Ansible playbook for server configuration
-  |-- README.md            # Deployment instructions
+├── terraform
+│   ├── main.tf          # Terraform configuration for AWS resources
+│   ├── variables.tf     # Terraform variable definitions
+│   └── outputs.tf       # Terraform output configurations
+├── ansible
+│   └── playbook.yml     # Ansible playbook for server configuration
+└── README.md            # Deployment instructions
+
 
 ## Prerequisites Applications:
 AWS CLI
