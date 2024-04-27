@@ -14,11 +14,11 @@
 │ ├── variables.tf # Terraform variable definitions
 │ ├── outputs.tf # Terraform output configurations
 │ └── modules
-│ └── s3_backend
-│ ├── bucket.tf # S3 bucket resource for Terraform backend
-│ ├── dynamo.tf # DynamoDB table resource for Terraform locking
-│ ├── main.tf # Main Terraform configuration for the s3_backend module
-│ └── variables.tf # Variables for the s3_backend module
+│   └── s3_backend
+│     ├── bucket.tf # S3 bucket resource for Terraform backend
+│     ├── dynamo.tf # DynamoDB table resource for Terraform locking
+│     ├── main.tf # Main Terraform configuration for the s3_backend module
+│     └── variables.tf # Variables for the s3_backend module
 ├── ansible
 │ ├── ansible.cfg # Ansible configuration file
 │ ├── vars.yml # Ansible variables file
